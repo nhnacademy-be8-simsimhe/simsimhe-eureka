@@ -47,7 +47,7 @@ public class LogAndCrashAppender extends AppenderBase<ILoggingEvent> {
         logData.put("projectVersion", "1.0.0");
         logData.put("logVersion", "v2");
         logData.put("body", message);
-        logData.put("logSource", "simsimbookstore");
+        logData.put("logSource", "simsim-prod-eureka");
         logData.put("logType", "log");
         logData.put("Platform", platform);
 
