@@ -59,7 +59,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          chmod +x ~/script/front_deploy.sh
+          chmod +x ~/script/eureka_startUp.sh
           ~/script/eureka_startUp.sh
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
