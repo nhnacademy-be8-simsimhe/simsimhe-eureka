@@ -1,5 +1,6 @@
 server:
   port: 8761
+  shutdown: graceful
 
 
 spring:
@@ -8,6 +9,12 @@ spring:
   lifecycle:
     timeout-per-shutdown-phase: 30s
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+      base-path: /management
 
 # ???? ?? ??? ???? ????
 eureka:
